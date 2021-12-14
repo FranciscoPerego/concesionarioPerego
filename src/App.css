@@ -380,3 +380,8 @@
   pointer-events: none;
   cursor: default;
 }
+
+h1 {
+  color: white;
+  margin-top: 100px;
+}
