@@ -385,3 +385,11 @@ h1 {
   color: white;
   margin-top: 100px;
 }
+
+.margenSuperior {
+  margin-top: 35px;
+}
+
+.white {
+  color: white;
+}
