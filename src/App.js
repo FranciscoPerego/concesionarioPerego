@@ -15,6 +15,7 @@ function App() {
       <NavBar/> 
      <h1>PEREGO LUXURY CAR RENTALS</h1>
      {cars.map (c => <Card model={c.model} price={c.price}/>)}
+     <div className="root"></div>
     </div>
   );
 }
