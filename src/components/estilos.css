@@ -1,0 +1,17 @@
+.cart {
+    position: absolute;
+    top: 0;
+    right: 10vw;
+   
+}
+
+p {
+    text-align: center;
+    color: white;
+  
+}
+
+body{
+    color: white;
+}
+
