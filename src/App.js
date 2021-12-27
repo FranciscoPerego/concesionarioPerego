@@ -1,8 +1,9 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import React, {Fragment , useState } from 'react'
-import Cars from './Car';
+import Cars from './components/Car';
 import Cart from './components/Cart';
+import ItemCount from './components/ItemCount';
 
 
 function App() {
@@ -39,8 +40,8 @@ function App() {
       <Cart
       cart ={cart} 
       />
-
-    </Fragment>
+      <ItemCount/>
+      </Fragment>
      /* {cars.map (c => <Card model={c.model} price={c.price}/>)}
     </div> */
   );

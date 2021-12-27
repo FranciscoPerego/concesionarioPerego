@@ -397,3 +397,84 @@ h1 {
 body{
   color: white;
 }
+
+.cartIcon{
+  margin-top: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+.itemStyle{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: solid 3px #1976D2;
+}
+.contenedorProductos{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+.listContainerDiv{
+  text-align: center;
+}
+.btnRed , .btnGreen{
+  margin:1rem;
+  padding:0.5rem 1rem;
+  border-radius: 15px;
+  border:2px solid black;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.btnRed{
+  background-color: red;
+}
+.btnGreen{
+  background-color: white;
+}
+.addButton{
+  padding:0.5rem 1rem;
+  border-radius: 15px;
+  border:2px solid black;
+  background-color: #1976D2;
+  font-weight: bold;
+}
+.cartButtons{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.btnRed , .btnGreen{
+  margin:1rem;
+  padding:0.5rem 1rem;
+  border-radius: 15px;
+  border:2px solid black;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.btnRed{
+  background-color: red;
+}
+.btnGreen{
+  background-color: green;
+}
+.addButton{
+  padding:0.5rem 1rem;
+  border-radius: 15px;
+  border:2px solid black;
+  background-color: #1976D2;
+  font-weight: bold;
+}
+.cartButtons{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}

@@ -1,40 +1,52 @@
 import React from 'react'
+import './estilos.css';
 
-
-const Car = ({car , cart , setCart , cars}) => {
-
-    const {modelo, precio , id} = car;
-
-
+const Car = ({ car , cart, setCart, cars }) => {
+    const { id , modelo , precio} = car;
     const reserveCar = (id) => {
-            const car = cars.filter((car) => car.id === id);
-            setCart([...cart, ...car])  
-    }
-
-    const delCar = (id) => {
-        const cars = cart.filter(burguer => burguer.id !== id)
-        setCart(cars)
-    }
-    
+      const car = cars.filter((car) => car.id === id);
+      setCart([...cart, ...car]);
+      console.log(cart.length);
+    };
+    const delReserve = (id) => {
+      const cars = cart.filter(() => car.id !== id);
+      setCart(cars);
+    };
+  
     return (
-        <div className='white'>
-            <ul>
-                <li>{modelo}</li>
-                <li>{precio}</li>
-                {cars ? (
-                <button type='button' onClick={() => reserveCar(id)}>
-                    Reservar
-                </button>
-                ) : (
-                    <div>
-                    <button type='button' onClick={() => reserveCar(id)}>
-                    Cancelar
-                </button>
-                </div>
-                )}
-            </ul>
-        </div>
-    )
-}
+      <ul className="container__content__burgers">
+
+        <li className="container__content__burgers--nombre">{modelo}</li>
+        <li className="container__content__burgers--precio">{precio}</li>
+        {cars ? (
+          <button
+            className="container__content__burgers--btnAdd"
+            type="button"
+            onClick={() => reserveCar(id)}
+          >
+            Reservar
+          </button>
+        ) : (
+          <div>
+            <button
+              className="container__content__burgers--btnDel"
+              type="button"
+              onClick={() => delReserve(id)}
+            >
+              Eliminar
+            </button>
+            <button
+              className="container__content__burgers--btnAdd"
+              type="button"
+              onClick={() => delReserve(id)}
+            >
+              Confirmar
+            </button>
+          </div>
+        )}
+      </ul>
+    );
+  };
+  
 
 export default Car;
